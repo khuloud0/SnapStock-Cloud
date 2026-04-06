@@ -14,7 +14,7 @@ def lambda_handler(event, context):
     topic_arn = "arn:aws:sns:us-east-1:079485644301:SnapStockAlerts"
     
     try:
-        # 2. تحديث المخزون (كودك القديم)
+        # 2. تحديث المخزون 
         response = stock_table.get_item(Key={'ProductID': 'Ghost_Ticket_001'})
         current_stock = int(response['Item']['StockCount'])
         new_stock = current_stock - 1
@@ -25,7 +25,7 @@ def lambda_handler(event, context):
             ExpressionAttributeValues={':s': str(new_stock)}
         )
         
-        # 3. تسجيل الطلب في جدول GhostOrders (الإضافة الجديدة)
+        # 3. تسجيل الطلب في جدول GhostOrders 
         order_id = f"ORDER-{datetime.now().strftime('%Y%m%d%H%M%S')}"
         orders_table.put_item(
             Item={
@@ -38,7 +38,7 @@ def lambda_handler(event, context):
         
         message = f"✅ SnapStock Success: Order {order_id} recorded. Remaining: {new_stock}"
         
-        # 4. نظام التنبيه الذكي (كودك القديم)
+        # 4. نظام التنبيه الذكي 
         if new_stock <= 45:
             alert_msg = f"Alert Khuloud! SnapStock inventory is low. Only {new_stock} left."
             sns.publish(
