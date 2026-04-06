@@ -1,6 +1,5 @@
 # 🚀 Ghost Checkout: Serverless Inventory Engine on AWS
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -16,7 +15,8 @@ The system is built on a modern **Event-Driven Architecture**:
 4. **Notification:** **Amazon SNS** triggers instant alerts for low-stock scenarios.
 5. **CI/CD:** **GitHub Actions** automates the entire deployment pipeline to AWS.
 
-> **Note:** [Insert a link to your architecture diagram image here or upload it to the repo]
+> **Note:** ![Architecture Diagram](./architecture-diagram.png)
+
 
 ## 🛠️ Tech Stack
 - **Cloud Provider:** AWS (Lambda, DynamoDB, SNS, IAM)
@@ -30,9 +30,16 @@ The system is built on a modern **Event-Driven Architecture**:
 - **Automated Deployments:** Fully integrated CI/CD pipeline; code changes go live in seconds.
 - **Proactive Monitoring:** Real-time SNS alerts for inventory re-stocking.
 
-## 📦 Deployment & Setup
-To deploy this project yourself:
+## 📈 Performance
+- **Deployment Speed:** ~20 seconds via GitHub Actions.
+- **Execution Latency:** Sub-second processing for inventory updates.
+- **Operational Cost:** $0 (Optimized for AWS Free Tier).
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/khuloud0/SnapStock-Cloud.git](https://github.com/khuloud0/SnapStock-Cloud.git)
+## 👩‍💻 Author
+**Khuloud AlQarni**  
+*Software Engineering Student at Holberton School*  
+[LinkedIn Profile](https://www.linkedin.com/in/khulud-alqarni-aa793b257) | [GitHub](https://github.com/khuloud0)
+
+---
+*Built with ❤️ and a passion for Cloud Architecture.*
+
