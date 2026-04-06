@@ -38,7 +38,7 @@ The system is built on a modern **Event-Driven Architecture**:
 ## 👩‍💻 Author
 **Khuloud AlQarni**  
 *Software Engineering Student at Holberton School*  
-[LinkedIn Profile](https://www.linkedin.com/in/khulud-alqarni-aa793b257) | [GitHub](https://github.com/khuloud0)
+[LinkedIn Profile](https://www.linkedin.com/in/khulud-alqarni-aa793b257)
 
 ---
 *Built with ❤️ and a passion for Cloud Architecture.*
